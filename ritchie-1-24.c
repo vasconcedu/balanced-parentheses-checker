@@ -1,5 +1,7 @@
 #include "chrstk.h"
 
+/* Usage: ./ritchie-1-24 < changeme.txt */
+
 int main()
 {
     int i;
