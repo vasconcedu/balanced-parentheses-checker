@@ -10,7 +10,7 @@ chrstk_t* init()
     return top;
 }
 
-int isempty(chrstk_t* top)
+int is_empty(chrstk_t* top)
 {
     return (top->nxt == NULL);
 }
@@ -26,7 +26,7 @@ void push(chrstk_t* top, char c)
     top->nxt = el; 
 }
 
-char gettopchr(chrstk_t* top)
+char get_top_char(chrstk_t* top)
 {
     if (top->nxt != NULL)
         return top->nxt->chr;
@@ -45,7 +45,7 @@ chrstk_t* pop(chrstk_t* top)
     return el;
 }
 
-void printall(chrstk_t* top)
+void print_all(chrstk_t* top)
 {
     chrstk_t* ptr;
 

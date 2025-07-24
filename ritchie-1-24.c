@@ -20,7 +20,7 @@ int main()
             else
                 e = c - 2; /* '[' or '{' */
 
-            if (gettopchr(top) != e) {
+            if (get_top_char(top) != e) {
                 printf("Unexpected '%c' found at position %d\n", c, i);
                 return 1;
             } else
@@ -28,10 +28,10 @@ int main()
         }
     }
 
-    if (!isempty(top)) {
+    if (!is_empty(top)) {
         printf("Unexpected EOF reached at position %d\n", i + 1);
         printf("Stack is\n");
-        printall(top);
+        print_all(top);
         return 2;
     }
 

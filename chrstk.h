@@ -10,10 +10,10 @@ typedef struct chrstk_t {
 } chrstk_t;
 
 chrstk_t* init();
-int isempty(chrstk_t* top);
+int is_empty(chrstk_t* top);
 void push(chrstk_t* top, char c);
-char gettopchr(chrstk_t* top);
+char get_top_char(chrstk_t* top);
 chrstk_t* pop(chrstk_t* top);
-void printall(chrstk_t* top);
+void print_all(chrstk_t* top);
 
 #endif
